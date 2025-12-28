@@ -1,0 +1,43 @@
+
+---
+
+## Steps Performed
+
+1. **Data Loading & Cleaning**  
+   - Loaded drivers, constructors, races, results, and circuits CSV files.
+   - Merged datasets using driverId, constructorId, raceId, and circuitId.
+   - Handled missing values and converted columns to appropriate datatypes.
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Top-performing drivers and teams by total points.
+   - Points distribution visualization.
+   - Bar plots of top 10 drivers and teams.
+
+3. **Driver Segmentation (Clustering)**  
+   - Aggregated driver statistics: average points, total points, number of races.
+   - Scaled features and applied KMeans clustering to categorize drivers into performance tiers.
+
+4. **Predictive Modeling**  
+   - Random Forest Regression to predict points based on year and race position.
+   - Time series forecasting using Prophet for top teams’ yearly points.
+
+5. **Visualization**  
+   - Matplotlib and Seaborn for bar charts, histograms, and scatter plots.
+   - Forecast plots for top teams.
+
+---
+
+## Requirements
+
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- prophet
+
+Install dependencies using:
+
+```bash
+pip install -r requirements.txt
